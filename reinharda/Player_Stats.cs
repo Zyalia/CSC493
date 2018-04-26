@@ -8,6 +8,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Stats : MonoBehaviour {
 
@@ -16,7 +17,33 @@ public class Player_Stats : MonoBehaviour {
 	//points is the most likely to be used.
 	public int health = 100;
 	public int points = 0;
-	public int attack_damage = 30;
-	
+	//Not using this variable:
+	//public int attack_damage = 30;
+
+	//public Text txt_point;
+	//public Text txt_EndGame;
+	public Text txt_point;
+
+	void Start()
+	{
+		points = 0;
+		txt_point.text = "Points: 0";
+		Debug.Log ("In Start function of Player_Stats");
+		//txt_EndGame.text = "";
+	}
+
+	public void ChangePoints(int value)
+	{
+		
+		points = points + value;
+		Debug.Log ("We are in ChangePoints");
+		txt_point.text = "Points: " + points;
+
+		if (points >= 500) 
+		{
+			Debug.Log ("Game won!");
+			//txt_EndGame.text = "You Win!";
+		}
+	}
 
 }
