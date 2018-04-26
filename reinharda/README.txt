@@ -6,7 +6,7 @@ Player_Stats - Contains player statistics such as health, speed, and points. Als
 
 
 
-The following scritps have Original code from: https://github.cocm/Brackeys/MultiplayerFPS-Tutorial/tree/master/MultiplayerFPS/Assets/Scripts
+The following scritps have Original code from: https://github.com/Brackeys/MultiplayerFPS-Tutorial/tree/master/MultiplayerFPS/Assets/Scripts
 
 PlayerController - Deals with the camera movement as well as the player jumping, rotating, and being able to move. (interacts with PlayerMotor)
 
